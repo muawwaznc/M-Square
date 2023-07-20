@@ -1,0 +1,9 @@
+<div class="col">
+    <a href="{% url 'product-detail' p.id %}" class="card">
+    <img src="/{{p.image}}" class="card-img-top" alt="{{p.name}}">
+    <div class="card-body">
+        <h5 class="card-title">{{p.name|truncatechars:45}}</h5>
+        <p class="card-text">Price: ${{p.price}}</p>
+    </div>
+    </a>
+</div>
